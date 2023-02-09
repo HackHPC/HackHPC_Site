@@ -1,0 +1,333 @@
+  # Site settings
+baseurl = "/"
+languageCode = "en-us"
+title = "Hackathon"
+theme = "syna"
+enableGitInfo = true
+version = "0.17.0"
+
+# Google Analytics tracking
+googleAnalytics = ""
+
+[outputs]
+  home = ["HTML", "JSON"]
+
+[frontmatter]
+date = ["date", "lastmod"]
+lastmod = ["lastmod", ":git", "date"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+     unsafe = true
+
+[params]
+  name = "Okkur Labs"
+  description = "Open Source Theme for your next project"
+
+  [params.style]
+    #background = "secondary"
+
+  # Theme customizations
+  # Assets relative to 'static/'
+  [params.custom]
+    #favicon = "favicon.ico"
+    #favicon_ico_sizes = "16x16 32x32"
+    favicon_png = "Omni_O.png"
+    #favicon_svg = "favicon.svg"
+
+  # Piwik tracking
+  [params.analytics.piwik]
+    #url = ""
+    #id = ""
+    #domain = "" # Track subdomains via "*.example.com"
+    # Optional hash for integrity check
+    #hash = "sha512-RfeD0pacGTqy9m7U6PgehQfS4cc7SIt+e+P+H5e848kEvB/RW84CUGO3O4O3LNbxjevym6KPUZ8muPsMrI8WIw=="
+
+  # Optional, global disable switch for fontawesome related files
+  # For custom fontawesome js files use the custom.js method
+  [params.fontawesome]
+    disabled = false
+    pro = false
+
+  [params.colors]
+    primary = "#00838f"
+    secondary = "#868e96"
+    success = "#008f54"
+    info = "#00c9dc"
+    warning = "#fdf314"
+    danger = "#dc1200"
+    light = "#f8f9fa"
+    dark = "#343a40"
+
+# main/prepend/postpend menus are displayed in nav fragment.
+# Keep an eye out for updates. These will be moved out to make navbar more
+# configurable.
+#[[menu.main]]
+#  url = "#info"
+#  name = "Info"
+#  weight = 10
+
+#[[menu.main]]
+#  url = ""
+#  name = "Info"
+#  weight = 10
+#  identifier = "info"
+
+[[menu.main]]
+  url = "/#info"
+  name = "What is a hackathon?"
+  weight = 10
+  parent = "participate"
+
+[[menu.main]]
+  url = "/#signup"
+  name = "Register"
+  weight = 10
+#  parent = "info"
+
+#[[menu.main]]
+#  url = "/#roles"
+#  name = "Roles"
+#  weight = 30
+#  parent = "info"
+
+[[menu.main]]
+  url = "/#faq"
+  name = "FAQ"
+  weight = 50
+  parent = "participate"
+
+
+[[menu.main]]
+  url = ""
+  name = "Info"
+  weight = 20
+  identifier = "participate"
+
+[[menu.main]]
+  url = "/hackers"
+  name = "Hackers"
+  weight = 15
+  parent = "participate"
+
+[[menu.main]]
+  url = "/mentors"
+  name = "Mentors"
+  weight = 20
+  parent = "participate"
+
+[[menu.main]]
+  url = "/support"
+  name = "Support Staff"
+  weight = 30
+  parent = "participate"
+
+[[menu.main]]
+  url = "/codeofconduct"
+  name = "Code of Conduct"
+  weight = 40
+  parent = "participate"
+
+[[menu.main]]
+  url = "/data"
+  name = "Dataset Sources"
+  weight = 40
+  parent = "participate"
+
+[[menu.main]]
+  url = ""
+  name = "Upcoming Hacks"
+  weight = 40
+  identifier = "upcoming_hacks"
+  
+# [[menu.main]]
+#  url = "/hpcinthecity"
+#  name = "HPC in the City"
+#  weight = 20
+#  parent = "upcoming_hacks"
+
+[[menu.main]]
+  url = "/#signup"
+  name = "Upcoming Hacks"
+  weight = 30
+  parent = "upcoming_hacks"
+
+[[menu.main]]
+  url = ""
+  name = "Past Hacks"
+  weight = 50
+  identifier = "past_hacks"
+
+[[menu.main]]
+  url = "/pasthacks/#content2"
+  name = "Past Hacks"
+  weight = 10
+  parent = "past_hacks"
+
+[[menu.main]]
+  url = "/pasthacks/#HPCintheCityDallas"
+  name = "HPC in the City: Dallas"
+  weight = 20
+  parent = "past_hacks"
+
+[[menu.main]]
+  url = "/pasthacks/#faculty_gateways22"
+  name = "Faculty Hack@Gateways22"
+  weight = 30
+  parent = "past_hacks"
+
+[[menu.main]]
+  url = "/pasthacks/#hack@tacc22"
+  name = "Hack@TACC2022"
+  weight = 40
+  parent = "past_hacks"
+
+[[menu.main]]
+  url = "/pasthacks/#admi2022"
+  name = "ADMI2022"
+  weight = 50
+  parent = "past_hacks"
+
+[[menu.main]]
+  url = "/pasthacks/#hpcinthecity21"
+  name = "HPC in the City 2021"
+  weight = 60
+  parent = "past_hacks"
+
+[[menu.main]]
+  url = "/pasthacks/#pearc21"
+  name = "HPC@PEARC21"
+  weight = 70
+  parent = "past_hacks"
+
+[[menu.main]]
+  url = "/pasthacks/#hpcinthecity20"
+  name = "HPC in the City 2020"
+  weight = 80
+  parent = "past_hacks"
+
+[[menu.main]]
+  url = "/pasthacks/#pearc20"
+  name = "HPC@PEARC20"
+  weight = 90
+  parent = "past_hacks"
+
+[[menu.main]]
+  url = "/pasthacks/#pearc19"
+  name = "HPC@PEARC19"
+  weight = 100
+  parent = "past_hacks"
+
+[[menu.main]]
+  url = "/pasthacks/#sc19"
+  name = "HPC@SC19"
+  weight = 110
+  parent = "past_hacks"
+
+[[menu.main]]
+  url = "/pasthacks/#pearc18"
+  name = "HPC@PEARC18"
+  weight = 120
+  parent = "past_hacks"
+
+[[menu.main]]
+  url = "/pasthacks/#sc18"
+  name = "HPC@SC18"
+  weight = 130
+  parent = "past_hacks"
+
+[[menu.main]]
+  url = "/sponsors"
+  name = "Sponsors"
+  weight = 60
+
+[[menu.main]]
+  url = "/about"
+  name = "About Us"
+  weight = 70 
+
+[[menu.main]]
+  url = ""
+  name = "Social"
+  weight = 80
+  identifier = "social"
+
+[[menu.main]]
+  url = "https://discord.gg/rSXasYKDwE"
+  name = "Discord"
+  weight = 10
+  parent = "social"
+
+[[menu.main]]
+  url = "https://twitter.com/ccloudhack"
+  name = "Twitter"
+  weight = 20
+  parent = "social"
+
+[[menu.main]]
+  url = "https://www.youtube.com/channel/UCESkfjHWsERvFpJgPmWXRSA"
+  name = "Youtube"
+  weight = 30
+  parent = "social"  
+
+[[menu.main]]
+  url = "/pasthacks/#email_form"
+  name = "Alumni Email"
+  weight = 40
+  parent = "social"
+
+[[menu.main]]
+  url = "https://www.linkedin.com/groups/8859728/"
+  name = "Alumni LinkedIn Group"
+  weight = 50
+  parent = "social"
+
+#[[menu.footer]]
+#  url = "#"
+#  name = "Link"
+#  weight = 10
+
+#[[menu.footer]]
+#  url = "#"
+#  name = "Long Link"
+#  weight = 30
+
+#[[menu.footer]]
+#  url = "#"
+#  name = "Tiny Link"
+#  weight = 30
+
+[[menu.copyright_footer]]
+  url = "#info"
+  name = "Info"
+  weight = 10
+
+[[menu.copyright_footer]]
+  url = "/about"
+  name = "About"
+  weight = 30
+
+#[[menu.footer_social]]
+#  weight = 20
+#  name = "github"
+#  pre = "fab fa-github"
+#  url = "#"
+
+[[menu.footer_social]]
+  weight = 30
+  name = "discord"
+  pre = "fab fa-discord"
+  url = "https://discord.gg/rSXasYKDwE"
+
+[[menu.footer_social]]
+  weight = 40
+  name = "twitter"
+  pre = "fab fa-twitter"
+  url = "https://twitter.com/ccloudhack"
+
+[[menu.footer_social]]
+  weight = 50
+  name = "youtube"
+  pre = "fab fa-youtube"
+  url = "https://www.youtube.com/channel/UCESkfjHWsERvFpJgPmWXRSA"

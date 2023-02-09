@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>list section on Hackathon</title>
+    <link>/list/</link>
+    <description>Recent content in list section on Hackathon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/list/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>First sample blog</title>
+      <link>/list/list1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/list/list1/</guid>
+      <description>Lorem ipsum...</description>
+    </item>
+    
+    <item>
+      <title>Second sample blog</title>
+      <link>/list/list2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/list/list2/</guid>
+      <description>This is a Second test of this list system.</description>
+    </item>
+    
+    <item>
+      <title>Third sample blog</title>
+      <link>/list/list3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/list/list3/</guid>
+      <description>This is a Third test of this list system.</description>
+    </item>
+    
+  </channel>
+</rss>
